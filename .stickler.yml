@@ -13,6 +13,9 @@ linters:
         config: './eslint.config'
     checkstyle:
         config: ./checkstyle.xml
+    shellcheck:
+        shell: bash
+        exclude: 'SC2154,SC2069'
 
 files:
     ignore:
