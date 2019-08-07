@@ -3,9 +3,16 @@ linters:
     flake8:
     eslint:
         config: './eslint.config'
-    csslint:
 
 files:
     ignore:
         - 'src/generated/*'
         - 'webroot/bower_components/*'
+        
+linters:
+    phpcs:
+        standard: PSR2
+        fixer: true
+    eslint:
+        config: eslint.json
+        fixer: true
