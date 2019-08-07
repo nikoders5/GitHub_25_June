@@ -11,6 +11,8 @@ linters:
     flake8:
     eslint:
         config: './eslint.config'
+    checkstyle:
+        config: ./checkstyle.xml
 
 files:
     ignore:
