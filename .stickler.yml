@@ -1,0 +1,23 @@
+    linters:
+    phpcs:
+        standard: PSR2
+        fixer: true
+    eslint:
+        config: eslint.json
+        fixer: true
+    shellcheck:
+        shell: bash
+        exclude: 'SC2154,SC2069'
+    csslint:
+        ignore: 'box-model,ids'
+    stylelint:
+        config: 'stylelintrc.json'
+    credo:
+        ignore-checks: duplicated
+    golint:
+        min_confidence: 0.85
+        fixer: true
+        ignore:
+            - 'exported function \w+ should have comment'
+    checkstyle:
+        config: ./checkstyle.xml
