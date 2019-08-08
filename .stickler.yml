@@ -21,3 +21,26 @@
             - 'exported function \w+ should have comment'
     checkstyle:
         config: ./checkstyle.xml
+    eslint:
+        config: './eslint.config'
+    phpcs:
+      standard: 'PSR2'
+      exclude: 'Generic.Files.LineLength,PSR2.Files.EndFileNewline'
+      ignore: 'tests/fixtures/generated/*'
+      extensions: 'php,ctp'
+      tab_width: 4
+      fixer: true
+    flake8:
+        python: 3
+        ignore: 'W28'
+        max-line-length: 80
+        max-complexity: 20
+        fixer: true
+    pep8:
+        python: 3
+        ignore: 'W28'
+        max-line-length: 120
+        fixer: true
+    rubocop:
+        display_cop_names: true
+        fixer: true
